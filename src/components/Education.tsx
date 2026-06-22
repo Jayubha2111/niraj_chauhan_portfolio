@@ -35,7 +35,7 @@ export default function Education() {
               </div>
 
               <div className="flex-1 min-w-0">
-                <h3 className="text-lg md:text-xl font-semibold text-white mb-1">
+                <h3 className="text-lg md:text-xl font-semibold text-on-glass mb-1">
                   {education.degree}
                 </h3>
                 <p className="text-violet-400 font-medium mb-2 text-sm md:text-base">

@@ -7,7 +7,7 @@ import { personalInfo } from "@/data/personal";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5">
+    <footer className="relative border-t border-subtle">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-dark-400 text-xs md:text-sm flex items-center gap-1">
@@ -34,7 +34,7 @@ export default function Footer() {
             >
               <Linkedin size={16} />
             </a>
-            <div className="w-px h-4 bg-white/10" />
+            <div className="w-px h-4 bg-subtle" />
             <motion.button
               onClick={scrollToTop}
               whileHover={{ y: -2 }}

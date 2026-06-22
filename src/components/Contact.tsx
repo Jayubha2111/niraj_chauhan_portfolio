@@ -87,7 +87,7 @@ export default function Contact() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-dark-400 text-xs md:text-sm">{item.label}</p>
-                  <p className="text-white font-medium text-sm md:text-base group-hover:text-cyan-400 transition-colors duration-200 truncate">
+                  <p className="text-on-glass font-medium text-sm md:text-base group-hover:text-cyan-400 transition-colors duration-200 truncate">
                     {item.value}
                   </p>
                 </div>
@@ -99,7 +99,7 @@ export default function Contact() {
                 href={personalInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 md:p-3 rounded-xl glass glass-hover text-dark-300 hover:text-cyan-400 hover:border-cyan-500/30 transition-all duration-200"
+                className="p-2.5 md:p-3 rounded-xl glass glass-hover text-on-glass-muted hover:text-cyan-400 hover:border-cyan-500/30 transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
@@ -108,14 +108,14 @@ export default function Contact() {
                 href={personalInfo.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 md:p-3 rounded-xl glass glass-hover text-dark-300 hover:text-violet-400 hover:border-violet-500/30 transition-all duration-200"
+                className="p-2.5 md:p-3 rounded-xl glass glass-hover text-on-glass-muted hover:text-violet-400 hover:border-violet-500/30 transition-all duration-200"
                 aria-label="GitHub"
               >
                 <Github size={18} />
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="p-2.5 md:p-3 rounded-xl glass glass-hover text-dark-300 hover:text-teal-400 hover:border-teal-500/30 transition-all duration-200"
+                className="p-2.5 md:p-3 rounded-xl glass glass-hover text-on-glass-muted hover:text-teal-400 hover:border-teal-500/30 transition-all duration-200"
                 aria-label="Email"
               >
                 <Mail size={18} />
@@ -133,7 +133,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="glass p-5 md:p-6 space-y-4 md:space-y-5"
             >
-              <div className="flex items-center gap-2 text-white font-semibold mb-1 md:mb-2">
+              <div className="flex items-center gap-2 text-on-glass font-semibold mb-1 md:mb-2">
                 <MessageSquare size={18} className="text-cyan-400" />
                 <span>Send a Message</span>
               </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="Your name"
-                    className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-dark-500 focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 text-sm"
+                    className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-subtle border border-subtle text-on-glass placeholder:text-[color:var(--text-on-glass-muted)] focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 text-sm"
                   />
                 </div>
                 <div>
@@ -158,7 +158,7 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-dark-500 focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 text-sm"
+                    className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-subtle border border-subtle text-on-glass placeholder:text-[color:var(--text-on-glass-muted)] focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 text-sm"
                   />
                 </div>
               </div>
@@ -171,7 +171,7 @@ export default function Contact() {
                   value={form.subject}
                   onChange={handleChange}
                   placeholder="What&apos;s this about?"
-                  className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-dark-500 focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 text-sm"
+                  className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-subtle border border-subtle text-on-glass placeholder:text-[color:var(--text-on-glass-muted)] focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 text-sm"
                 />
               </div>
 
@@ -183,7 +183,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Your message..."
-                  className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-dark-500 focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 resize-none text-sm"
+                  className="w-full px-3.5 py-2.5 md:px-4 md:py-2.5 rounded-xl bg-subtle border border-subtle text-on-glass placeholder:text-[color:var(--text-on-glass-muted)] focus:outline-none focus:border-cyan-500/50 transition-colors duration-200 resize-none text-sm"
                 />
               </div>
 

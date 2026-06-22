@@ -37,7 +37,7 @@ export default function About() {
             className="lg:col-span-3"
           >
             <div className="glass p-6 md:p-8 space-y-4">
-              <h3 className="text-xl md:text-2xl font-semibold text-white">
+              <h3 className="text-xl md:text-2xl font-semibold text-on-glass">
                 Data Engineer based in Ahmedabad, India
               </h3>
               {aboutSummary.map((paragraph, i) => (
@@ -47,7 +47,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.15 }}
-                  className="text-dark-300 leading-relaxed text-base md:text-lg"
+                  className="text-on-glass-muted leading-relaxed text-base md:text-lg"
                 >
                   {paragraph}
                 </motion.p>
@@ -74,7 +74,7 @@ export default function About() {
                 <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/20 to-violet-500/20 flex items-center justify-center flex-shrink-0">
                   <item.icon size={18} className="text-cyan-400" />
                 </div>
-                <span className="text-dark-200 text-sm">{item.text}</span>
+                <span className="text-on-glass-secondary text-sm">{item.text}</span>
               </motion.div>
             ))}
           </motion.div>

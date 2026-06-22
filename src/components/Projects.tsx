@@ -91,11 +91,11 @@ function ProjectCard({ project, idx }: { project: (typeof projects)[0]; idx: num
         <project.icon className="text-cyan-400" size={22} />
       </div>
 
-      <h3 className="text-base md:text-lg font-semibold text-white mb-2 md:mb-3 group-hover:text-cyan-400 transition-colors duration-200">
+      <h3 className="text-base md:text-lg font-semibold text-on-glass mb-2 md:mb-3 group-hover:text-cyan-400 transition-colors duration-200">
         {project.title}
       </h3>
 
-      <p className="text-dark-300 text-xs md:text-sm leading-relaxed mb-4 md:mb-5 flex-1">
+      <p className="text-on-glass-muted text-xs md:text-sm leading-relaxed mb-4 md:mb-5 flex-1">
         {project.description}
       </p>
 
@@ -103,7 +103,7 @@ function ProjectCard({ project, idx }: { project: (typeof projects)[0]; idx: num
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="px-2 py-0.5 md:px-2.5 md:py-1 text-[10px] md:text-xs rounded-md bg-white/5 text-dark-300"
+            className="px-2 py-0.5 md:px-2.5 md:py-1 text-[10px] md:text-xs rounded-md bg-subtle text-on-glass-muted"
           >
             {tag}
           </span>

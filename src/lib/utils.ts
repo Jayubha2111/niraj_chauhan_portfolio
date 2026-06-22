@@ -1,8 +1,10 @@
 export function scrollToSection(id: string) {
   const el = document.querySelector(id);
-  el?.scrollIntoView({ behavior: "smooth" });
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({ top, behavior: "smooth" });
 }
 
 export function scrollToTop() {
-  scrollToSection("#hero");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }

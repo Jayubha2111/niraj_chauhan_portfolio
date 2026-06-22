@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { navLinks } from "@/data/navigation";
 import { personalInfo } from "@/data/personal";
 import { scrollToSection } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,9 +38,15 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-dark-900/80 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/10"
+          ? "backdrop-blur-xl border-b shadow-lg shadow-black/5"
           : "bg-transparent"
       }`}
+      style={{
+        background: scrolled
+          ? "var(--nav-bg, rgba(2,6,23,0.8))"
+          : "transparent",
+        borderColor: scrolled ? "var(--glass-border)" : "transparent",
+      }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -52,7 +59,9 @@ export default function Navbar() {
             className="text-xl font-bold gradient-text hover:scale-105 transition-transform duration-200"
           >
             {'<'}
-            <span className="text-white">{personalInfo.initials}</span>
+            <span style={{ color: "var(--body-text)" }}>
+              {personalInfo.initials}
+            </span>
             {'/>'}
           </a>
 
@@ -67,25 +76,31 @@ export default function Navbar() {
                     e.preventDefault();
                     handleClick(link.href);
                   }}
-                  className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${
+                   className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${
                     isActive
-                      ? "text-white bg-white/10"
-                      : "text-dark-300 hover:text-white hover:bg-white/5"
+                      ? "text-cyan-400 bg-black/5 dark:bg-white/10"
+                      : "text-dark-400 hover:text-dark-700 dark:hover:text-dark-200 hover:bg-black/5 dark:hover:bg-white/5"
                   }`}
                 >
                   {link.label}
                 </a>
               );
             })}
+            <div className="ml-2">
+              <ThemeToggle />
+            </div>
           </div>
 
-          <button
-            className="md:hidden p-2.5 rounded-xl glass text-dark-300 hover:text-white"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <button
+              className="p-2.5 rounded-xl glass text-dark-400 hover:text-dark-700 dark:hover:text-dark-200"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -93,7 +108,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden mx-4 mb-4 glass border border-white/10 overflow-hidden"
+          className="md:hidden mx-4 mb-4 glass overflow-hidden"
         >
           <div className="p-2 space-y-1">
             {navLinks.map((link) => {
@@ -106,10 +121,10 @@ export default function Navbar() {
                     e.preventDefault();
                     handleClick(link.href);
                   }}
-                  className={`block px-4 py-3 rounded-xl text-sm transition-all duration-200 ${
+                   className={`block px-4 py-3 rounded-xl text-sm transition-all duration-200 ${
                     isActive
-                      ? "text-white bg-white/10"
-                      : "text-dark-300 hover:text-white hover:bg-white/5"
+                      ? "text-cyan-400 bg-black/5 dark:bg-white/10"
+                      : "text-dark-400 hover:text-dark-700 dark:hover:text-dark-200 hover:bg-black/5 dark:hover:bg-white/5"
                   }`}
                 >
                   {link.label}

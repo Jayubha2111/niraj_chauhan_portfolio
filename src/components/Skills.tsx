@@ -48,7 +48,7 @@ export default function Skills() {
               variants={itemVariants}
               className="glass p-5 md:p-6 glass-hover group"
             >
-              <h3 className="text-base md:text-lg font-semibold text-white mb-3 pb-3 border-b border-white/10 flex items-center justify-between">
+              <h3 className="text-base md:text-lg font-semibold text-on-glass mb-3 pb-3 border-b border-subtle flex items-center justify-between">
                 <span>{category.title}</span>
                 <span className="text-dark-500 text-xs">
                   {category.skills.length}
@@ -62,7 +62,7 @@ export default function Skills() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.03 }}
-                    className="px-2.5 py-1 md:px-3 md:py-1.5 text-xs md:text-sm rounded-lg bg-white/5 text-dark-200 hover:bg-cyan-500/10 hover:text-cyan-300 hover:border-cyan-500/20 border border-transparent transition-all duration-200"
+                    className="px-2.5 py-1 md:px-3 md:py-1.5 text-xs md:text-sm rounded-lg bg-subtle text-on-glass-secondary hover:bg-cyan-500/10 hover:text-cyan-300 hover:border-cyan-500/20 border border-transparent transition-all duration-200"
                   >
                     {skill}
                   </motion.span>

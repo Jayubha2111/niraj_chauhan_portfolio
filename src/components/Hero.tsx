@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen pt-16 md:pt-20 flex items-center justify-center overflow-hidden"
     >
       {/* Animated grid background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(6,182,212,0.12)_0%,_transparent_50%),radial-gradient(ellipse_at_bottom_left,_rgba(139,92,246,0.08)_0%,_transparent_50%)]" />
@@ -71,7 +71,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           {/* Left Content */}
-          <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
+          <div className="flex-1 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ export default function Hero() {
               className="flex items-center justify-center lg:justify-start gap-2 mb-4"
             >
               <Code2 size={20} className="text-violet-400" />
-              <span className="text-xl md:text-2xl text-dark-200 font-light">
+              <span className="text-xl md:text-2xl text-on-glass-secondary font-light">
                 {typingText}
                 <span className="typing-cursor" />
               </span>
@@ -118,7 +118,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-dark-300 max-w-xl mb-8 text-base md:text-lg leading-relaxed"
+              className="text-on-glass-muted max-w-xl mb-8 text-base md:text-lg leading-relaxed"
             >
               {personalInfo.tagline}
             </motion.p>
@@ -140,7 +140,7 @@ export default function Hero() {
               </a>
               <button
                 onClick={() => scrollToSection("#contact")}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass glass-hover text-dark-200 font-medium transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass glass-hover text-on-glass-secondary font-medium transition-all duration-300 hover:scale-105"
               >
                 <Mail size={18} />
                 Contact Me
@@ -157,7 +157,7 @@ export default function Hero() {
                 href={personalInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl glass glass-hover text-dark-300 hover:text-cyan-400 hover:border-cyan-500/30 transition-all duration-200"
+                className="p-3 rounded-xl glass glass-hover text-on-glass-muted hover:text-cyan-400 hover:border-cyan-500/30 transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -166,19 +166,19 @@ export default function Hero() {
                 href={personalInfo.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl glass glass-hover text-dark-300 hover:text-violet-400 hover:border-violet-500/30 transition-all duration-200"
+                className="p-3 rounded-xl glass glass-hover text-on-glass-muted hover:text-violet-400 hover:border-violet-500/30 transition-all duration-200"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="p-3 rounded-xl glass glass-hover text-dark-300 hover:text-teal-400 hover:border-teal-500/30 transition-all duration-200"
+                className="p-3 rounded-xl glass glass-hover text-on-glass-muted hover:text-teal-400 hover:border-teal-500/30 transition-all duration-200"
                 aria-label="Email"
               >
                 <Mail size={20} />
               </a>
-              <div className="w-px h-8 bg-white/10 mx-1" />
+              <div className="w-px h-8 bg-subtle mx-1" />
               <span className="text-dark-500 text-xs">
                 {personalInfo.email}
               </span>
@@ -190,7 +190,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.7, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="order-1 lg:order-2 flex-shrink-0"
+            className="flex-shrink-0"
           >
             <div className="relative" style={{ animation: "float 5s ease-in-out infinite" }}>
               {/* Glow behind */}
@@ -201,7 +201,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-violet-500/10 to-teal-500/10" />
 
                 {/* Animated border ring */}
-                <div className="absolute inset-1 rounded-[22px] border border-white/5" />
+                <div className="absolute inset-1 rounded-[22px] border border-subtle" />
 
                 {/* Center initials */}
                 <div className="relative z-10 text-center">
@@ -237,21 +237,21 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [-4, 4, -4] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-3 -right-3 glass px-4 py-2 rounded-xl border border-white/10"
+                className="absolute -bottom-3 -right-3 glass px-4 py-2 rounded-xl border border-subtle"
               >
                 <div className="flex items-center gap-2">
                   <Database size={14} className="text-cyan-400" />
-                  <span className="text-xs text-dark-200 font-medium">15M+ Records</span>
+                  <span className="text-xs text-on-glass-secondary font-medium">15M+ Records</span>
                 </div>
               </motion.div>
               <motion.div
                 animate={{ y: [4, -4, 4] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-3 -left-3 glass px-4 py-2 rounded-xl border border-white/10"
+                className="absolute -top-3 -left-3 glass px-4 py-2 rounded-xl border border-subtle"
               >
                 <div className="flex items-center gap-2">
                   <Code2 size={14} className="text-violet-400" />
-                  <span className="text-xs text-dark-200 font-medium">1.5+ Yrs Exp</span>
+                  <span className="text-xs text-on-glass-secondary font-medium">1.5+ Yrs Exp</span>
                 </div>
               </motion.div>
             </div>

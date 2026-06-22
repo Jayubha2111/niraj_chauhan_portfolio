@@ -54,7 +54,7 @@ export default function Timeline() {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-2 mb-4">
                   <div className="flex items-center gap-2 text-cyan-400">
                     <Briefcase size={18} className="flex-shrink-0" />
-                    <h3 className="text-lg md:text-xl font-semibold text-white">
+                    <h3 className="text-lg md:text-xl font-semibold text-on-glass">
                       {exp.title}
                     </h3>
                   </div>
@@ -76,7 +76,7 @@ export default function Timeline() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 + i * 0.1 }}
-                      className="flex items-start gap-2 text-dark-300 text-sm md:text-base"
+                      className="flex items-start gap-2 text-on-glass-muted text-sm md:text-base"
                     >
                       <ChevronRight size={15} className="mt-0.5 text-teal-400 flex-shrink-0" />
                       <span>{ach}</span>
