@@ -1,0 +1,59 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 254 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Niraj Chauhan - Data Engineer) Tj
+/F1 14 Tf
+0 -40 Td
+(Email: mrchauhan783@gmail.com | Phone: +91 8849038588) Tj
+0 -30 Td
+(Location: Ahmedabad, India) Tj
+0 -50 Td
+(--- Professional Summary ---) Tj
+0 -30 Td
+(Data Engineer with 1.5+ years of experience building scalable ETL) Tj
+0 -25 Td
+(pipelines, processing 15M+ records, and delivering robust data) Tj
+0 -25 Td
+(infrastructure for analytics and business intelligence.) Tj
+0 -50 Td
+(--- Experience ---) Tj
+0 -30 Td
+(1. Data Engineer @ Purra.ai | Jul 2025 - Apr 2026) Tj
+0 -25 Td
+(2. Python Developer @ Actowiz Solutions | Sep 2024 - Jul 2025) Tj
+0 -50 Td
+(--- Education ---) Tj
+0 -30 Td
+(BCA - LJ College of Computer Application, 2024) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000266 00000 n 
+0000000572 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+622
+%%EOF
