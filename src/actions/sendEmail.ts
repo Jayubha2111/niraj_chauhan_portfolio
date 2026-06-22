@@ -3,10 +3,7 @@
 import nodemailer from "nodemailer";
 
 const siteName = "Niraj Chauhan | Data Engineer";
-const siteUrl = "https://nirajchauhan.dev";
 const accent = "#06b6d4";
-const accent2 = "#8b5cf6";
-const accent3 = "#14b8a6";
 const gradient = "linear-gradient(135deg, #06b6d4, #8b5cf6, #14b8a6)";
 const darkBg = "#020617";
 const darkCard = "#0f172a";
