@@ -44,6 +44,12 @@ body {
   @apply font-sans overflow-x-hidden;
   background: var(--page-bg);
   color: var(--page-text);
+  min-height: 100vh;
+}
+
+.dark body,
+html.dark {
+  background-color: #020617;
 }
 
 ::-webkit-scrollbar {

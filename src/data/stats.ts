@@ -8,13 +8,13 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { icon: Server, label: "Experience", value: "1.5+ Years" },
+  { icon: Server, label: "Experience", value: "2 + Years" },
   { icon: Database, label: "Records Processed", value: "15M+" },
-  { icon: BarChart3, label: "Pipelines Built", value: "10+" },
+  { icon: BarChart3, label: "Pipelines Built", value: "40+" },
   { icon: Users, label: "Clients Served", value: "20+" },
 ];
 
 export const aboutSummary = [
-  "With 1.5+ years of experience in data engineering, I specialize in building scalable ETL pipelines, web data extraction systems, and data processing solutions. I have successfully processed over 15 million records, delivering reliable data infrastructure for analytics and business intelligence.",
-  "My expertise spans the full data lifecycle — from extracting raw data from diverse sources to transforming, loading, and optimizing it for actionable insights. I am passionate about automating workflows, ensuring data quality, and building systems that scale.",
+  "With 2+ years of experience in data engineering and freelance development, I specialize in building scalable ETL pipelines, web data extraction systems, and data processing solutions. I have successfully processed over 15 million records, delivering reliable data infrastructure for analytics and business intelligence.",
+  "As a top-rated freelancer on Fiverr, I have delivered 30+ projects for clients across 10+ countries, specializing in Python automation, web scraping, and custom data pipelines. My expertise spans the full data lifecycle — from extracting raw data to transforming, loading, and optimizing it for actionable insights.",
 ];

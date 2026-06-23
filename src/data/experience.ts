@@ -3,9 +3,25 @@ export interface Experience {
   company: string;
   period: string;
   achievements: string[];
+  isFreelance?: boolean;
+  fiverrUrl?: string;
 }
 
 export const experiences: Experience[] = [
+  {
+    title: "Freelance Data Engineer & Web Scraping Expert",
+    company: "Fiverr – Freelance",
+    period: "2024 – Present",
+    achievements: [
+      "Delivered 30+ freelance projects on Fiverr including web scraping, data extraction, ETL pipelines, and automation solutions",
+      "Built custom Python scrapers using Scrapy, BeautifulSoup, Selenium & Playwright for clients across 10+ countries",
+      "Processed and cleaned 5M+ records for clients in e-commerce, real estate, finance, and lead generation domains",
+      "Maintained 5-star Fiverr rating with 100% client satisfaction and repeat business from multiple clients",
+      "Developed automated data pipelines and scheduled scraping jobs using Airflow and cron, delivering real-time datasets",
+    ],
+    isFreelance: true,
+    fiverrUrl: "https://www.fiverr.com/pe/99QdXoY",
+  },
   {
     title: "Data Engineer",
     company: "Purra.ai",

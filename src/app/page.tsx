@@ -10,10 +10,12 @@ import Metrics from "@/components/Metrics";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <LoadingScreen />
       <Navbar />
       <Hero />
       <About />

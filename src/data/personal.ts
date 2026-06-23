@@ -1,14 +1,15 @@
 export const personalInfo = {
   name: "Niraj Chauhan",
-  initials: "NC",
-  title: "Data Engineer",
+  initials: "NIRAJ CHAUHAN",
+  title: "Data Engineer & Freelance Specialist",
   tagline:
-    "Building robust data pipelines, extracting insights from 15M+ records, and engineering scalable ETL solutions.",
+    "Building robust data pipelines, extracting insights from 15M+ records, and engineering scalable ETL solutions. Available for freelance projects on Fiverr.",
   location: "Ahmedabad, India",
   phone: "+91 8849038588",
   email: "mrchauhan783@gmail.com",
   social: {
     linkedin: "https://linkedin.com/in/niraj-chauhan",
-    github: "https://github.com/niraj-chauhan",
+    github: "https://github.com/Niraj1321",
+    fiverr: "https://www.fiverr.com/pe/99QdXoY",
   },
 };

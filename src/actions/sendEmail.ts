@@ -135,7 +135,7 @@ export async function sendEmail(formData: {
           In the meantime, feel free to connect with me on 
           <a href="https://linkedin.com/in/niraj-chauhan" style="color:${accent};text-decoration:none;font-weight:500">LinkedIn</a> 
           or check out my work on 
-          <a href="https://github.com/niraj-chauhan" style="color:${accent};text-decoration:none;font-weight:500">GitHub</a>.
+          <a href="https://github.com/Niraj1321" style="color:${accent};text-decoration:none;font-weight:500">GitHub</a>.
         </p>
 
         <hr style="border:none;border-top:1px solid ${darkBorder};margin:24px 0">

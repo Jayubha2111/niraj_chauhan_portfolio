@@ -48,12 +48,9 @@ export default function Skills() {
               variants={itemVariants}
               className="glass p-5 md:p-6 glass-hover group"
             >
-              <h3 className="text-base md:text-lg font-semibold text-on-glass mb-3 pb-3 border-b border-subtle flex items-center justify-between">
-                <span>{category.title}</span>
-                <span className="text-dark-500 text-xs">
-                  {category.skills.length}
-                </span>
-              </h3>
+            <h3 className="text-base md:text-lg font-semibold text-on-glass mb-3 pb-3 border-b border-subtle">
+  {category.title}
+</h3>
               <div className="flex flex-wrap gap-1.5 md:gap-2">
                 {category.skills.map((skill, i) => (
                   <motion.span

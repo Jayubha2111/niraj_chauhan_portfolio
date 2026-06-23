@@ -58,11 +58,11 @@ export default function Navbar() {
             }}
             className="text-xl font-bold gradient-text hover:scale-105 transition-transform duration-200"
           >
-            {'<'}
+         
             <span style={{ color: "var(--body-text)" }}>
               {personalInfo.initials}
             </span>
-            {'/>'}
+          
           </a>
 
           <div className="hidden md:flex items-center gap-1">
