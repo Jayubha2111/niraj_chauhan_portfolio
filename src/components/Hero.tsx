@@ -229,7 +229,7 @@ export default function Hero() {
                 {/* Profile Image */}
                 <div className="relative z-10 w-full h-full">
                   <Image
-                    src="/niraj.png"
+                    src="/niraj.jpeg"
                     alt="Niraj Chauhan"
                     fill
                     className="object-cover"

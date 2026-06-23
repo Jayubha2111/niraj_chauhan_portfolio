@@ -4,17 +4,20 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { stats } from "@/data/stats";
 
-function Counter({ value, suffix = "" }: { value: string; suffix?: string }) {
+function Counter({ value }: { value: string }) {
   const [count, setCount] = useState(0);
+  const [done, setDone] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
 
   const num = parseInt(value.replace(/[^0-9]/g, ""));
+  const suffix = value.replace(/[0-9]/g, "").trim();
   const isNumeric = !isNaN(num);
 
   useEffect(() => {
     if (!isNumeric) {
       setCount(1);
+      setDone(true);
       return;
     }
     const observer = new IntersectionObserver(
@@ -27,6 +30,7 @@ function Counter({ value, suffix = "" }: { value: string; suffix?: string }) {
             start += increment;
             if (start >= num) {
               setCount(num);
+              setDone(true);
               clearInterval(timer);
             } else {
               setCount(start);
@@ -40,7 +44,13 @@ function Counter({ value, suffix = "" }: { value: string; suffix?: string }) {
     return () => observer.disconnect();
   }, [num, isNumeric]);
 
-  return <div ref={ref}>{isNumeric ? count : value}</div>;
+  if (!isNumeric) return <div ref={ref}>{value}</div>;
+
+  return (
+    <div ref={ref}>
+      {done ? value : count}
+    </div>
+  );
 }
 
 export default function Metrics() {

@@ -27,10 +27,10 @@ export const experiences: Experience[] = [
     company: "Purra.ai",
     period: "July 2025 – April 2026",
     achievements: [
-      "Engineered scalable ETL pipelines processing 5M+ records/month using Python, Apache Spark, and Airflow",
-      "Designed and maintained real-time data streaming architecture with Kafka, reducing data latency by 60%",
-      "Built automated data quality monitoring system, improving data accuracy from 92% to 99.7%",
-      "Optimized SQL queries and database schemas, cutting query execution time by 45%",
+      "Engineered large-scale data acquisition and ETL pipelines processing 15M+ trade and certification records across multiple international platforms",
+      "Designed scalable crawler architecture for dynamic, search-based, and paginated registry platforms,ensuring high reliability",
+      "Extracted structured datasets from company directories (US, Canada, India), government contractor databases (CAGE codes), and global certification registries (Halal, Kosher, FSC, BRCGS, OEKO-TEX)",
+      "Implemented batch processing, retry logic, proxy rotation, and structured logging, improving fault tolerance and reducing failure rates",
     ],
   },
   {
@@ -38,10 +38,14 @@ export const experiences: Experience[] = [
     company: "Actowiz Solutions",
     period: "September 2024 – July 2025",
     achievements: [
-      "Developed 20+ custom web scraping solutions using Scrapy, BeautifulSoup, and Playwright for diverse clients",
-      "Built robust data pipelines processing 10M+ records across e-commerce, trade, and certification domains",
-      "Implemented anti-detection measures and proxy rotation, achieving 98% success rate on targeted sites",
-      "Created automated monitoring and alerting system for pipeline failures, reducing downtime by 80%",
+      "Developed automated web scraping pipelines for e-commerce, quick-commerce, pharmaceutical,restaurant, and retail platforms",
+      "Extracted structured product data including pricing, ratings, stock availability, and seller information at scale",
+      "Built data extraction workflows for industrial automation suppliers and B2B manufacturing catalogs",
+      "Handled JavaScript-rendered platforms using Selenium and Playwright for dynamic data extraction",
+      // "Designed and automated scraping workflows using Python and Windows Task Scheduler, reducing manual effort and enabling scheduled data collection",
+      // "Stored and managed structured datasets in MySQL and MongoDB with optimized schema design",
+      // "Improved parsing logic and selector strategies, increasing scraping efficiency and reducing execution time",
+      // "Contributed to real estate and cruise industry data scraping projects",
     ],
   },
 ];

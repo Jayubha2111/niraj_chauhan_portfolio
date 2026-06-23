@@ -8,7 +8,7 @@ export const personalInfo = {
   phone: "+91 8849038588",
   email: "mrchauhan783@gmail.com",
   social: {
-    linkedin: "https://linkedin.com/in/niraj-chauhan",
+    linkedin: "https://www.linkedin.com/in/niraj-chauhan-4b91142a8?",
     github: "https://github.com/Niraj1321",
     fiverr: "https://www.fiverr.com/pe/99QdXoY",
   },

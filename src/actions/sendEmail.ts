@@ -133,7 +133,7 @@ export async function sendEmail(formData: {
 
         <p style="color:${textMuted};font-size:14px;line-height:1.6;margin:0 0 8px">
           In the meantime, feel free to connect with me on 
-          <a href="https://linkedin.com/in/niraj-chauhan" style="color:${accent};text-decoration:none;font-weight:500">LinkedIn</a> 
+          <a href="https://www.linkedin.com/in/niraj-chauhan-4b91142a8?" style="color:${accent};text-decoration:none;font-weight:500">LinkedIn</a> 
           or check out my work on 
           <a href="https://github.com/Niraj1321" style="color:${accent};text-decoration:none;font-weight:500">GitHub</a>.
         </p>

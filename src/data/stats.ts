@@ -8,8 +8,8 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { icon: Server, label: "Experience", value: "2 + Years" },
-  { icon: Database, label: "Records Processed", value: "15M+" },
+  { icon: Server, label: "Experience", value: "2 Years" },
+  { icon: Database, label: "Records Processed", value: "15M" },
   { icon: BarChart3, label: "Pipelines Built", value: "40+" },
   { icon: Users, label: "Clients Served", value: "20+" },
 ];
